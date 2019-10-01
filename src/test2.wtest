@@ -1,0 +1,31 @@
+import auto.*
+import Dependencia.*
+import parte3.*
+
+describe"cosas"{
+	const cachito = new Corsa()
+	var pedido1 = new Pedidos()
+	
+	test "parte3" {
+	cachito.capacidad()
+	cachito.velocidad()
+	cachito.color(rojo)
+	assert.equals(4,cachito.capacidad())
+	assert.equals(150,cachito.velocidad())
+	assert.equals(rojo,cachito.color())
+	
+	
+	pedido1.distancia(960)
+	pedido1.tiempo(8)
+	pedido1.cantPasajeros(4)
+	pedido1.coloresIncompatibles(#{azul,negro})
+	pedido1.autoSatisfacer(cachito)
+	
+	
+	
+	
+
+}
+	
+	
+}

@@ -1,0 +1,48 @@
+import Dependencia.*
+import auto.*
+describe "cosas"{
+	var deportes = new Dependencia()
+	var cachito = new Corsa()
+	var corsaAzul = new Corsa()
+	var corsaVerde = new Corsa()
+	var kwid1 = new Kwid()
+	var aventador = new Autoespecial()
+	var cultura = new Dependencia()
+	var kwidC1 = new Kwid()
+	var kwidC2 = new Kwid()
+	var kwidC3 = new Kwid()
+	
+	
+	test "test deportes" {
+	
+	cachito.color(rojo)
+	deportes.cant_empleados(45)
+	kwid1.tieneTanqueAdicional(true)
+	aventador.capacidad(8)
+	aventador.velocidad(160)
+	aventador.peso(1200)
+	aventador.color(beige)
+	
+	assert.equals(8,aventador.capacidad())
+	assert.equals(160,aventador.velocidad())
+	assert.equals(1200,aventador.peso())
+	assert.equals(beige,aventador.color())
+	
+
+}
+test "test cultura"{
+	cultura.cant_empleados(31)
+	kwidC1.tieneTanqueAdicional(true)
+	kwidC2.tieneTanqueAdicional(true)
+	kwidC3.tieneTanqueAdicional(false)
+	trafic.motor(motorBataton)
+	
+	
+	
+		
+	}
+}
+
+
+
+	
