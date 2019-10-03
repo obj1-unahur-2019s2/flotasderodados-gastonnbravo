@@ -37,7 +37,7 @@ object trafic {
 	var property interior 
 
 	method capacidad() { return interior.capacidad() } 
-	method velocidad() { return motor.velocidadMaxima() }
+	method velocidad() { return motor.velocidad() }
 	method peso() {
 		return 4000 + motor.peso() + interior.peso()
 	}
